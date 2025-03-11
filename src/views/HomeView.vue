@@ -1,6 +1,6 @@
 <script setup>
 import Main from '@/components/Main.vue';
-import { ref, onMounted, watch } from 'vue'
+
 
 
 

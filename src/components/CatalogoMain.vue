@@ -1,6 +1,5 @@
 <script setup>
-import { data } from 'autoprefixer';
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted } from 'vue';
 import CartaPeliculasView from '@/components/PropsCatalogo.vue';
 const peliculas = ref({});
 
