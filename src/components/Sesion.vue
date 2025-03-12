@@ -7,8 +7,8 @@ import DefaultLayaout from "@/layouts/DefaultLayout.vue"
     <DefaultLayaout>
         <Menu />
         <section class="pt-30 pb-30">
-            <h1>Sesion</h1>
-            <form class="max-w-sm mx-auto">
+            <form class="max-w-sm sm:mx-60 md:mx-50 xl:mx-100 2xl:mx-50">
+                <h1>Sesion</h1>
                 <div class="mb-5">
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Correo
                         Electronico</label>
