@@ -3,7 +3,7 @@ import Sesion from '@components/Sesion.vue';
 </script>
 
 <template>
-
-    <Sesion />
-
+    <DefaultLayout>
+        <Sesion />
+    </DefaultLayout>
 </template>

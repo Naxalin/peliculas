@@ -76,10 +76,10 @@ onMounted(() => {
         <br>
         <span>Valoración: {{ voteAverage }}</span>
         <br>
-        <span>Votos: {{ voteCount }}</span>
-        <br>
-        <span>Idioma: {{ originalLanguage }}</span>
-        <br>
+        <!-- <span>Votos: {{ voteCount }}</span> -->
+
+        <!-- <span>Idioma: {{ originalLanguage }}</span> -->
+
         <span>Fecha de estreno: {{ firstAirDate }}</span>
         <br>
         <span>Generos: {{ genres.toString() }}</span>

@@ -1,6 +1,9 @@
 <script setup>
 import Calendario from '@/components/Calendario.vue'
+import DefaultLayout from '@/layouts/DefaultLayout.vue';
 </script>
 <template>
-    <Calendario />
+    <DefaultLayout>
+        <Calendario class="" />
+    </DefaultLayout>
 </template>

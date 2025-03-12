@@ -1,5 +1,6 @@
 <script setup>
 import Main from '@/components/Main.vue';
+import DefaultLayout from '@/layouts/DefaultLayout.vue';
 
 
 
@@ -22,10 +23,10 @@ import Main from '@/components/Main.vue';
 </script>
 
 <template>
-  <main>
 
-    <div id="app">
-      <Main />
-    </div>
-  </main>
+  <DefaultLayout>
+    <Main />
+  </DefaultLayout>
+
+
 </template>

@@ -28,7 +28,7 @@ const cargarPeliculanas = async () => {
         const response = await fetch(url, options);
         const result = await response.json();
 
-        peliculas.value = result
+        peliculas.value = result;
         console.log(result);
         carga.value = false;
     } catch (error) {
