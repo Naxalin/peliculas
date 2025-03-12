@@ -1,5 +1,5 @@
 <script setup>
-import Calendario from '../components/Calendary.vue'
+import Calendario from '@/components/Calendario.vue'
 </script>
 <template>
     <Calendario />
