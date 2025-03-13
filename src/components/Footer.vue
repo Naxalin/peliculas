@@ -5,16 +5,17 @@
                 <ul
                     class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                     <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Catalogo</a>
+                        <a href="/catalogo" class="hover:underline me-4 md:me-6">Catalogo</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Politicas de privacidad</a>
+                        <a href="/politicas-de-privacidad" class="hover:underline me-4 md:me-6">Politicas de
+                            privacidad</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Cookies</a>
+                        <a href="/cookies" class="hover:underline me-4 md:me-6">Cookies</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline">derechos de autor</a>
+                        <a href="/derechos-de-autor" class="hover:underline">derechos de autor</a>
                     </li>
                 </ul>
             </div>

@@ -1,9 +1,11 @@
 <script setup>
-import Detalles from '@/components/Detalles.vue'
+import DerechosAutor from '@/components/DerechosAutor.vue'
 import DefaultLayout from '@/layouts/DefaultLayout.vue';
+
 </script>
+
 <template>
     <DefaultLayout>
-        <Detalles />
+        <DerechosAutor />
     </DefaultLayout>
 </template>

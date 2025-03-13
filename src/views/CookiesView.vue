@@ -1,9 +1,9 @@
 <script setup>
-import Detalles from '@/components/Detalles.vue'
 import DefaultLayout from '@/layouts/DefaultLayout.vue';
+import Cookies from '@/components/Cookies.vue'
 </script>
 <template>
     <DefaultLayout>
-        <Detalles />
+        <Cookies />
     </DefaultLayout>
 </template>
