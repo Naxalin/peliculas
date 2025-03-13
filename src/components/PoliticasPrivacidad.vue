@@ -4,6 +4,7 @@
 
 <template>
     <section>
+        <h1>POLITICAS DE PRIVACIDAD</h1>
         <div class="bg-gray-100 p-6 rounded-lg shadow-md">
             <h2 class="text-2xl font-bold text-gray-900 mb-4">Política de Privacidad</h2>
 
