@@ -49,7 +49,14 @@ console.log(route.params.id)
 
 
 <template>
-    <section class="max-w-200">
+    <div v-if="carga" class="max-w-300">
+        <SkeletonCatalogo class="flex flex-col gap-2">
+
+            <div class="bg-gray-700 w-full h-200"></div>
+
+        </SkeletonCatalogo>
+    </div>
+    <section v-else class="max-w-200">
         <div>
             <PropsDetalles v-for="pelicula in peliculas" :key="pelicula.id" :imagen="pelicula.image"
                 :adult="pelicula.adult" :first-air-date="pelicula.firstAirDate" :genres="pelicula.genres"

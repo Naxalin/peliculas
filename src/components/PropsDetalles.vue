@@ -63,7 +63,17 @@ onMounted(() => {
 });
 </script>
 
+
 <template>
+
+    <div v-if="carga" class="max-w-200">
+        <SkeletonCatalogo class="flex flex-col gap-2">
+
+            <div class="bg-gray-700 w-full h-200"></div>
+
+        </SkeletonCatalogo>
+    </div>
+
     <section class="sm:flex items-center p-5 sm:ml-70 shadow-xl bg-white rounded-3xl text-center  gap-2">
         <div class="pl-20">
             <img class="object-cover max-h-96" :src="imagen" alt="imagen de una isla">

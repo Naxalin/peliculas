@@ -45,25 +45,29 @@ onMounted(() => {
 <template>
     <div>
         <div v-if="carga">
-            <SkeletonCatalogo>
-                <img class="object-cover w-full aspect-auto bg-gray-600">
-                <h2 class="bg-gray-700 w-full"></h2>
+            <SkeletonCatalogo class="flex flex-col gap-2">
+                <div class="bg-gray-700 w-full h-20"></div>
+                <div class="bg-gray-700 w-full h-4"></div>
                 <!-- <p>{{ overview }} </p> -->
-                <span class="w-full bg-gray-700"></span>
-                <br>
-                <span class="w-full bg-gray-700"></span>
-                <br>
-                <span class="w-full bg-gray-700"></span>
-                <br>
-                <span class="w-full bg-gray-700"></span>
-                <br>
-                <span class="w-full bg-gray-700"></span>
-                <br>
-                <span class="w-full bg-gray-700"></span>
-                <br>
-                <br>
-                <button type="button"
-                    class="bg-gradient-to-r from-gray-500 pt via-gray-600 to-gray-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none shadow-lg font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 "></button>
+                <div class="grid grid-cols-4 gap-2">
+                    <span class="w-full bg-gray-700 h-72"></span>
+
+                    <span class="w-full bg-gray-700 h-72"></span>
+
+                    <span class="w-full bg-gray-700 h-72"></span>
+
+                    <span class="w-full bg-gray-700 h-72"></span>
+
+                    <span class="w-full bg-gray-700 h-72"></span>
+
+                    <span class="w-full bg-gray-700 h-72"></span>
+
+                    <span class="w-full bg-gray-700 h-72"></span>
+
+                    <span class="w-full bg-gray-700 h-72"></span>
+
+                </div>
+
             </SkeletonCatalogo>
         </div>
         <section v-else class="grid grid-cols-1 bg-white rounded-3xl shadow-xl p-2 

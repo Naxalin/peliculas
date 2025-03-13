@@ -44,7 +44,37 @@ onMounted(() => {
 }) 
 </script>
 <template>
-  <section class="flex-1   w-full">
+
+  <div v-if="carga">
+    <SkeletonCatalogo class="flex flex-col gap-2">
+
+      <div class="bg-gray-700 w-full h-200"></div>
+      <div class="bg-gray-700 w-full h-4"></div>
+      <!-- <p>{{ overview }} </p> -->
+      <div class="grid grid-cols-4 gap-2">
+        <span class="w-full bg-gray-700 h-72"></span>
+
+        <span class="w-full bg-gray-700 h-72"></span>
+
+        <span class="w-full bg-gray-700 h-72"></span>
+
+        <span class="w-full bg-gray-700 h-72"></span>
+
+        <span class="w-full bg-gray-700 h-72"></span>
+
+        <span class="w-full bg-gray-700 h-72"></span>
+
+        <span class="w-full bg-gray-700 h-72"></span>
+
+        <span class="w-full bg-gray-700 h-72"></span>
+
+      </div>
+
+    </SkeletonCatalogo>
+  </div>
+
+
+  <section v-else class="flex-1   w-full">
     <iframe class="w-full" width="760" height="615" src="https://www.youtube.com/embed/oDmOReViIbs?si=-VLiZ8J9Meh46Dc9"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
