@@ -55,25 +55,30 @@ onMounted(() => {
                                 </p>
                             </div>
                             <ul class="py-1" role="none">
-                                <li>
+                                <li class="hidden">
+                                    <a href="#"
+                                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+
+                                        <path
+                                            d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z" />
+
+                                        <span class="flex-1 ms-3 whitespace-nowrap">Usuario</span>
+                                    </a>
+                                </li>
+                                <li class="hidden">
                                     <a href="#"
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
-                                        role="menuitem">Dashboard</a>
+                                        role="menuitem">Favoritos</a>
                                 </li>
-                                <li>
+                                <li class="hidden">
                                     <a href="#"
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                                         role="menuitem">Ajustes</a>
                                 </li>
                                 <li>
-                                    <a href="#"
+                                    <RouterLink to="/sesion"
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
-                                        role="menuitem">Ganancias</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
-                                        role="menuitem">Iniciar Sesion</a>
+                                        role="menuitem">Iniciar Sesion</RouterLink>
                                 </li>
                             </ul>
                         </div>
@@ -88,21 +93,19 @@ onMounted(() => {
         <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
             <ul class="space-y-2 font-medium">
                 <li>
-                    <RouterLink to="/Inicio"
+                    <RouterLink to="/"
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 22 21">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
+                            viewBox="0 0 48 48">
                             <path
-                                d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                            <path
-                                d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
+                                d="M 23.980469 0.984375 C 13.643469 0.984375 11.291453 8.1771563 8.3144531 17.285156 C 8.0764531 18.014156 7.832125 18.763344 7.578125 19.527344 C 6.947125 21.418344 6.3665156 22.900031 5.8535156 24.207031 C 4.7535156 27.012031 3.9609375 29.039109 3.9609375 32.037109 C 3.9609375 38.768109 11.839078 44.033438 12.205078 44.273438 C 12.383078 44.385438 16.625859 47.003906 21.005859 47.003906 L 27.005859 47.003906 C 31.385859 47.003906 35.618938 44.383094 35.835938 44.246094 C 36.167938 44.024094 43.964844 38.723 43.964844 32 C 43.963844 28.961 43.172125 26.910312 42.078125 24.070312 C 41.587125 22.798313 41.033828 21.354391 40.423828 19.525391 C 40.179828 18.792391 39.943844 18.076 39.714844 17.375 C 36.715844 8.218 34.347469 0.984375 23.980469 0.984375 z M 19 10 C 21 10 22 13 24 13 C 26 13 27 10 29 10 C 30.291 10 31.392422 10.746156 32.232422 11.910156 C 32.451422 13.316156 32.616328 14.920547 32.736328 16.435547 C 32.192328 15.628547 31.434 15 30.375 15 C 28.375 15 26 19 26 20 C 26 20 26 21 27 21 C 28 21 29 17 30.75 17 C 31.603 17 32.318375 17.545875 32.859375 18.171875 C 32.956375 19.754875 33 21.072641 33 21.681641 C 33 22.890641 33.291875 23.808141 33.546875 24.619141 C 33.790875 25.389141 34 26.054078 34 26.955078 C 34 28.447078 33.476703 29.651453 32.970703 30.814453 C 32.493703 31.911453 32 33.044891 32 34.337891 C 32 36.039891 31.999437 38.158828 31.273438 38.923828 C 30.558438 39.677828 29.860547 40.658375 29.185547 41.609375 C 28.634547 42.384375 27.972563 43.308281 27.351562 43.988281 C 27.235562 43.993281 27.121859 44.001953 27.005859 44.001953 L 21.005859 44.001953 C 20.886859 44.001953 20.766484 43.993281 20.646484 43.988281 C 20.025484 43.307281 19.365453 42.384375 18.814453 41.609375 C 18.138453 40.659375 17.439609 39.678828 16.724609 38.923828 C 15.999609 38.158828 16 36.039891 16 34.337891 C 16 33.044891 15.506297 31.9095 15.029297 30.8125 C 14.523297 29.6495 14 28.447078 14 26.955078 C 14 26.055078 14.209125 25.391094 14.453125 24.621094 C 14.708125 23.810094 15 22.890641 15 21.681641 C 15 21.085641 15.129641 19.646281 15.306641 17.988281 C 15.825641 17.443281 16.482 17 17.25 17 C 19 17 20 21 21 21 C 22 21 22 20 22 20 C 22 19 19.625 15 17.625 15 C 16.724 15 16.041484 15.454938 15.521484 16.085938 C 15.747484 14.149938 15.996156 12.224109 16.160156 11.162109 C 16.940156 10.406109 17.902 10 19 10 z M 19.496094 22.001953 A 1.497 1.499 0 1 0 19.496094 25 A 1.497 1.499 0 1 0 19.496094 22.001953 z M 28.494141 22.001953 C 27.666141 22.001953 26.996094 22.673953 26.996094 23.501953 C 26.996094 24.329953 27.667141 25 28.494141 25 C 29.321141 25 29.992188 24.329953 29.992188 23.501953 C 29.992188 22.673953 29.321141 22.001953 28.494141 22.001953 z M 17.515625 26.017578 C 17.243625 26.009578 17.015812 26.223141 17.007812 26.494141 L 17.007812 26.5 C 17.007812 28.125 18 28.125 18 29 C 18 29.75 17 30.375 17 31.625 C 17 34.75 19.75 35 20.75 35 L 27.25 35 C 28.25 35 31 34.75 31 31.625 C 31 30.375 30 29.75 30 29 C 30 28.125 30.992188 28.125 30.992188 26.5 L 30.992188 26.494141 C 30.983187 26.222141 30.755375 26.008578 30.484375 26.017578 C 30.221375 26.025578 30.007813 26.241953 30.007812 26.501953 C 30.007812 27.501953 29 27.876953 29 29.001953 C 29 30.251953 29.625 30.501953 29.625 31.501953 C 29.625 31.960953 29.406 33.001953 28 33.001953 L 20 33.001953 C 18.594 33.001953 18.375 31.960953 18.375 31.501953 C 18.375 30.501953 19 30.251953 19 29.001953 C 19 27.876953 17.992188 27.501953 17.992188 26.501953 C 17.992188 26.241953 17.778625 26.025578 17.515625 26.017578 z M 24.125 36.025391 C 22.408 36.025391 21.030672 36.887656 20.263672 37.472656 C 19.875672 37.768656 19.756422 38.298469 19.982422 38.730469 L 20.044922 38.847656 C 20.259922 39.258656 20.730688 39.467562 21.179688 39.351562 C 21.832687 39.183563 22.842609 38.974609 23.974609 38.974609 C 25.228609 38.974609 26.218844 39.189047 26.839844 39.373047 C 27.279844 39.504047 27.750375 39.320781 27.984375 38.925781 L 28.121094 38.695312 C 28.380094 38.259313 28.270187 37.697625 27.867188 37.390625 C 27.111188 36.814625 25.776 36.025391 24.125 36.025391 z">
+                            </path>
                         </svg>
                         <span class="ms-3">Inicio</span>
                     </RouterLink>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="/ultimas"
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                         <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -111,8 +114,6 @@ onMounted(() => {
                                 d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
                         </svg>
                         <span class="flex-1 ms-3 whitespace-nowrap">Ultimas Peliculas</span>
-                        <span
-                            class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span>
                     </a>
                 </li>
                 <li>
@@ -126,20 +127,8 @@ onMounted(() => {
                         </svg>
                         <span class="flex-1 ms-3 whitespace-nowrap">Estrenos de Peliculas</span>
                         <span
-                            class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
+                            class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span>
                     </RouterLink>
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 20 18">
-                            <path
-                                d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z" />
-                        </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Usuarios</span>
-                    </a>
                 </li>
                 <li>
                     <a href="./catalogo" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100
@@ -167,6 +156,7 @@ onMounted(() => {
                         </svg>
                         <span class="flex-1 ms-3 whitespace-nowrap">Iniciar Sesion</span>
                     </RouterLink>
+
                 </li>
             </ul>
         </div>

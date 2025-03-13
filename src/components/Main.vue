@@ -29,17 +29,7 @@ const cargarPeliculanas = async () => {
     const response = await fetch(url, options);
     const result = await response.json();
 
-    peliculas.value = result;
-    let i = 0
-    let limitador = true
-    // while (limitador) {
-    //   console.log(result);
-    //   i++;
-    //   if (i < 10) {
-    //     limitador = false;
-    //   }
-    // }
-
+    peliculas.value = result.slice(0, 8);
     console.log(result);
     carga.value = false;
   } catch (error) {
@@ -54,8 +44,7 @@ onMounted(() => {
 }) 
 </script>
 <template>
-  <Menu />
-  <section class="flex-1   w-full pl-64">
+  <section class="flex-1   w-full">
     <iframe class="w-full" width="760" height="615" src="https://www.youtube.com/embed/oDmOReViIbs?si=-VLiZ8J9Meh46Dc9"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -63,7 +52,7 @@ onMounted(() => {
   </section>
   <br>
   <hr>
-  <div class="ml-[260px] mb-20 ">
+  <div class="sm:ml-[30px] mb-20 ">
     <section class="grid md:grid-cols-3 sm:grid-cols-1 xl:grid-cols-4 gap-3">
       <PropsCatalogo v-for="pelicula in peliculas" :key="pelicula.id" :imagen="pelicula.image" :adult="pelicula.adult"
         :first-air-date="pelicula.firstAirDate" :genres="pelicula.genres" :id="pelicula.id" :name="pelicula.name"
@@ -72,7 +61,6 @@ onMounted(() => {
     </section>
   </div>
   <Form />
-  <Footer />
 </template>
 
 <style scoped></style>
