@@ -50,10 +50,8 @@ console.log(route.params.id)
 
 <template>
     <div v-if="carga" class="max-w-300">
-        <SkeletonCatalogo class="flex flex-col gap-2">
-
-            <div class="bg-gray-700 w-full h-200"></div>
-
+        <SkeletonCatalogo>
+            <div class="bg-gray-700 w-full h-100"></div>
         </SkeletonCatalogo>
     </div>
     <section v-else class="max-w-200">
